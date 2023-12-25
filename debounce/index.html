@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      #app {
+        text-align: center;
+      }
+
+      #search-box {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #results {
+        margin-top: 20px;
+      }
+
+      .movie-card {
+        display: inline-block;
+        margin: 10px;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .movie-card img {
+        max-width: 100px;
+        max-height: 150px;
+      }
+
+      #movie-details {
+        display: none;
+        margin-top: 20px;
+      }
+
+      #movie-details img {
+        max-width: 200px;
+        max-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div id="app">
+      <h1>Movie Search App Search for {avatar of avenger only}</h1>
+      <input type="text" id="search-box" placeholder="Search for a movie..." />
+      <div id="movie-details"></div>
+    </div>
+    <div id="results"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
